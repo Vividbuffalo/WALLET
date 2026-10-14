@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://mayanlandscape.com/sitemap.xml
