@@ -25,8 +25,9 @@ h3{font-family:Nunito,sans-serif;color:var(--blue);margin:28px 0 10px}
 .menu-item .price{white-space:nowrap;font-weight:700;color:var(--blue)}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
 .card{background:#fff;border-radius:12px;padding:16px 18px;box-shadow:0 2px 8px #0001}
-.photos img{width:100%;height:220px;object-fit:cover;border-radius:12px;display:block}
-@media(max-width:700px){.photos{grid-template-columns:1fr 1fr;gap:10px}.photos img{height:140px}}
+.feature-photo{width:100%;max-height:520px;object-fit:cover;border-radius:12px;display:block;margin:8px 0 20px}
+.interior-photo{width:100%;max-height:480px;object-fit:cover;border-radius:12px;display:block;margin:8px 0}
+@media(max-width:700px){.feature-photo{max-height:320px}.interior-photo{max-height:280px}}
 table{border-collapse:collapse;width:100%;max-width:420px;background:#fff;border-radius:12px;overflow:hidden}td{padding:8px 14px;border-bottom:1px solid #eee}
 blockquote{margin:0;font-style:italic}iframe{width:100%;height:340px;border:0;border-radius:12px}
 .callbar{position:fixed;bottom:0;left:0;right:0;background:var(--blue);text-align:center;padding:10px;display:none}.callbar a{color:var(--yellow);font-weight:700;text-decoration:none;font-size:1.1rem}
@@ -43,6 +44,9 @@ footer{text-align:center;color:var(--muted);font-size:.8rem;padding:30px 20px}
 <a class="btn alt" href="https://www.google.com/maps/dir/?api=1&destination=3518+E+Route+66+Ste+107+Flagstaff+AZ+86004">Get directions</a>
 </div>
 <main>
+<section id="food">
+<img class="feature-photo" src="img/breakfast.jpg" alt="Breakfast plate with omelette, hash browns, biscuits and gravy">
+</section>
 <section id="menu"><h2>Menu</h2>
 <p class="note">Prices from the restaurant’s printed menu (October 2026). Specials change; please call to confirm.</p>
 
@@ -161,11 +165,8 @@ footer{text-align:center;color:var(--muted);font-size:.8rem;padding:30px 20px}
 <p class="note">Consuming raw or undercooked meats, poultry, seafood, shellfish or eggs may increase your risk of foodborne illness.</p>
 </section>
 
-<section id="photos"><h2>Photos</h2>
-<div class="grid photos">
-<img src="img/breakfast.jpg" alt="Breakfast plate with omelette, hash browns, biscuits and gravy">
-<img src="img/interior.jpg" alt="Dining room at The Place Restaurant East">
-</div>
+<section id="interior">
+<img class="interior-photo" src="img/interior.jpg" alt="Dining room at The Place Restaurant East">
 </section>
 
 <section id="hours"><h2>Hours</h2>
